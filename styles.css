@@ -39,11 +39,12 @@ body {
     display: flex;
     padding: 15px;
     gap: 5px;
+    justify-content: center;
 }
 
 .logo img{
     width: 50%;
-    max-width: 50%;
+    max-width: 150px;
     height: auto;
 }
 
