@@ -1,5 +1,10 @@
 /*---------------------Estilos Generales ----------------------*/
 
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 @font-face {
     font-family: 'Norse';
     src: url(Fonts/Norse-Bold.otf) format('opentype');
@@ -9,6 +14,7 @@
 
 body {
     height: 100vh;
+    display: flex;
 }
 
 /*-----------Estilos de la parte izquierda----------*/
@@ -64,4 +70,99 @@ body {
     margin: 0px auto;
     margin-bottom: 10px;
     font-size: 12px;
+}
+
+/*-----------------------------------Estilos de la parte derecha*-------------------*/
+
+/*-----generales----------*/
+
+.right-content {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.right-content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------h1-----------*/
+
+.main-title {
+    font-size: 20px;
+    margin-bottom:40px;
+    padding: 30px;
+}
+
+/*formulario parte principal*/
+
+
+.h2andinputswrapper {
+    box-shadow: 0px 2px 3px lightgray;
+    padding: 30px;
+}
+
+.h2andinputswrapper h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.inputswrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.envoltorio-local {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.envoltorio-local label {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.envoltorio-local input {
+    width: 70%;
+    height: 20px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+
+.envoltorio-local input:invalid {
+    border-color: red;
+}
+
+.envoltorio-local input:focus {
+    outline: 1px solid #596d48;
+}
+
+/*-----parte final--------*/
+
+.botonyspanfinales {
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.botonyspanfinales button {
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 13px 0px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: #596d48;
+    box-shadow: 0px 1px 2px #596d48;
+}
+
+.botonyspanfinales span a {
+    text-decoration: none;
+    color: #596d48;
+    font-weight: bold;
 }
